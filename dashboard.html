@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Student Dashboard - Royal Tech International College</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="header-inner"><div><p class="eyebrow">STUDENT PORTAL</p><h1>Royal Tech International College</h1><p>Your personal student dashboard.</p></div><button class="header-login" onclick="logout()">🚪 Logout</button></div></header>
+<nav><div class="nav-inner"><a href="index.html">Home</a><a href="courses.html">Courses</a><a href="gallery.html">Gallery</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a class="active" href="dashboard.html">👤 Dashboard</a><a href="#" onclick="logout();return false;">Logout</a></div></nav>
+<main id="studentDashboard">
+<section class="dashboard-welcome"><span class="badge">PROTECTED STUDENT AREA</span><h2>👋 Welcome, <span id="studentName"></span>!</h2><p>Your Royal Tech student information is shown below.</p></section>
+<div class="dashboard-grid">
+<div class="dashboard-card"><div class="icon">👤</div><h3>Student Information</h3><p><strong>Name:</strong> <span id="dashboardName"></span></p><p><strong>Email:</strong> <span id="dashboardEmail"></span></p></div>
+<div class="dashboard-card"><div class="icon">📚</div><h3>Enrolled Course</h3><p><strong>Course:</strong> <span id="dashboardCourse"></span></p><p><strong>Status:</strong> <span class="status">Active Student</span></p></div>
+<div class="dashboard-card"><div class="icon">📅</div><h3>Academic Information</h3><p><strong>Academic Year:</strong> 2026</p><p><strong>Campus:</strong> Johannesburg</p></div>
+<div class="dashboard-card"><div class="icon">📖</div><h3>Student Resources</h3><p>Access your course information and learning resources.</p><button class="btn" onclick="showResources()">View Resources</button></div>
+</div>
+<div id="resourceMessage" class="resource-message"></div>
+<div class="dashboard-actions"><button class="btn btn-danger" onclick="logout()">🚪 Logout</button></div>
+</main>
+<footer><p>© 2026 Royal Tech International College</p><p>Demo website for portfolio purposes.</p></footer><script src="script.js"></script>
+</body>
+</html>

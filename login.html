@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Student Sign In - Royal Tech International College</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="header-inner"><div><p class="eyebrow">STUDENT PORTAL</p><h1>Royal Tech International College</h1><p>Secure-looking demo student access.</p></div><a class="header-login" href="index.html">← Back Home</a></div></header>
+<nav><div class="nav-inner"><a href="index.html">Home</a><a href="courses.html">Courses</a><a href="gallery.html">Gallery</a><a href="about.html">About Us</a><a href="contact.html">Contact</a><a class="active" href="login.html">Student Sign In</a></div></nav>
+<main class="auth-container"><div class="auth-box"><div class="auth-icon">🔐</div><span class="eyebrow">STUDENT LOGIN</span><h2>Welcome back</h2><p>Sign in to access your student dashboard.</p>
+<form id="loginForm"><label for="loginEmail">Email Address</label><input type="email" id="loginEmail" placeholder="Enter your email" required><label for="loginPassword">Password</label><div class="password-wrap"><input type="password" id="loginPassword" placeholder="Enter your password" required><button type="button" class="show-password" onclick="togglePassword('loginPassword', this)">Show</button></div><button class="btn full" type="submit">Sign In</button></form><p id="loginMessage" class="message"></p><p class="auth-link">Don't have an account? <a href="signup.html">Create an Account</a></p><div class="demo-note">Demo authentication: accounts are stored in this browser only.</div></div></main>
+<footer><p>© 2026 Royal Tech International College</p><p>Demo website for portfolio purposes.</p></footer><script src="script.js"></script>
+</body>
+</html>
